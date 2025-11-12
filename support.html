@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Find Meal Deals – Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Support page for the Find Meal Deals iOS app. Get help, report issues, and contact the developer."
+  />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #f9fafb;
+      --accent: #f97316;
+      --accent-soft: rgba(249,115,22,0.12);
+      --border: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1f2937 0, #020617 55%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 820px;
+      background: linear-gradient(135deg, #020617 0, #020617 45%, #111827 100%);
+      border-radius: 24px;
+      padding: 28px 24px 32px;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(15, 23, 42, 0.9);
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .app-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      background: radial-gradient(circle at 30% 20%, #f97316, #ea580c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 22px;
+      color: #0b1120;
+      box-shadow:
+        0 12px 30px rgba(249, 115, 22, 0.6),
+        0 0 0 1px rgba(15, 23, 42, 0.8);
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      letter-spacing: 0.03em;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      max-width: 520px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #fed7aa;
+      margin-top: 6px;
+    }
+
+    .chip span.icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(249, 115, 22, 0.6);
+      font-size: 10px;
+    }
+
+    section {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    p,
+    li {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      opacity: 0.92;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .card {
+      border-radius: 18px;
+      padding: 14px 14px 12px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--border);
+    }
+
+    .card h3 {
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      font-size: 0.78rem;
+      opacity: 0.75;
+      margin-top: 4px;
+    }
+
+    a {
+      color: #fed7aa;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(253, 186, 116, 0.6);
+    }
+
+    a:hover {
+      border-bottom-style: solid;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .contact-list li {
+      margin-bottom: 6px;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      margin-left: 8px;
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 22px;
+      font-size: 0.78rem;
+      opacity: 0.65;
+    }
+
+    @media (min-width: 720px) {
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .container {
+        padding: 32px 28px 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="app-badge">F</div>
+      <div>
+        <h1>Find Meal Deals – Support</h1>
+        <p>
+          Need help with the Find Meal Deals iOS app? This page explains how the
+          app works, common issues, and how to contact the developer directly.
+        </p>
+        <div class="chip">
+          <span class="icon">i</span>
+          <span>Last updated: November 2025</span>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>About the App</h2>
+      <p>
+        <strong>Find Meal Deals</strong> helps you discover restaurant specials,
+        discounts, and promotions near your current location. You can explore
+        deals, view key details, and navigate to the restaurant with a single
+        tap using your preferred maps app.
+      </p>
+    </section>
+
+    <section>
+      <h2>How to Use Find Meal Deals</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>1. Allow Location Access</h3>
+          <p>
+            When you first open the app, iOS will ask for permission to access
+            your location. Granting access allows the app to show deals near
+            you. If you denied this earlier, you can enable it in:
+          </p>
+          <p class="meta">
+            Settings → Privacy &amp; Security → Location Services → Find Meal
+            Deals
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>2. Browse Nearby Deals</h3>
+          <p>
+            The home screen lists active deals from restaurants around you.
+            Scroll to explore offers, then tap a deal to see more details such
+            as description, time window, and location.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>3. Navigate to a Restaurant</h3>
+          <p>
+            When you find a deal you like, tap the <strong>Navigate</strong>
+            button. You can open the route in Apple Maps or another supported
+            navigation app installed on your device.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>4. Saving Favorites (if available)</h3>
+          <p>
+            If the app version you are using supports favorites, tap the
+            favorite/heart icon on a deal to save it for quick access later in
+            the Favorites section.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Common Questions</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>No deals are showing near me</h3>
+          <ul>
+            <li>Confirm location access is set to “While Using the App”.</li>
+            <li>
+              Ensure you have a stable internet connection (Wi-Fi or cellular).
+            </li>
+            <li>
+              Some areas may not yet have participating restaurants. Coverage
+              will expand over time.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Location looks incorrect</h3>
+          <ul>
+            <li>Check that Location Services are enabled for your device.</li>
+            <li>
+              Try closing the app completely and reopening it to refresh your
+              location.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>The navigation button doesn’t work</h3>
+          <ul>
+            <li>
+              Make sure Apple Maps or another maps app is installed and working.
+            </li>
+            <li>
+              If the problem continues, please send us your device model, iOS
+              version, and a short description of what happens when you tap the
+              button.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>A deal is outdated or incorrect</h3>
+          <p>
+            Restaurant offerings can change. If you see a deal that is no longer
+            valid, please report it using the contact email below and include:
+          </p>
+          <ul>
+            <li>Restaurant name</li>
+            <li>Deal title</li>
+            <li>Date and time you visited</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact &amp; Support</h2>
+      <p>
+        If you need help, found a bug, or have suggestions for new features, you
+        can reach the developer directly.
+      </p>
+      <ul class="contact-list">
+        <li>
+          Email:
+          <a href="mailto:jason@restii.com">jason@restii.com</a>
+          <span class="pill">Preferred</span>
+        </li>
+        <li>
+          App Store:
+          Use the “App Support” link on the Find Meal Deals App Store page.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacy &amp; Data</h2>
+      <p>
+        Find Meal Deals uses your location only to show nearby deals and help
+        you navigate to restaurants. Location data is not sold to third
+        parties.
+      </p>
+      <p>
+        For full details on how data is handled, please review our Privacy
+        Policy:
+        <!-- Adjust the href to match the actual URL of your privacy policy -->
+        <a href="https://jasonhckim.github.io/Privacy_Policy/privacy-policy.html" target="_blank"
+          >View Privacy Policy</a
+        >.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        © 2025 Find Meal Deals. All rights reserved.  
+        This page is provided for informational and support purposes for users
+        of the Find Meal Deals iOS application.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
